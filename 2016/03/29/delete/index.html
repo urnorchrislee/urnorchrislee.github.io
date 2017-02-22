@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,html5," />
+  <meta name="keywords" content="关键字," />
 
 
 
@@ -107,18 +107,28 @@
 
 
 
-<meta name="description" content="Hello Hexo!">
+<meta name="description" content="delete关键字
+作用:
+
+删除对象中的属性
+删除没有使用var关键字声明的全局变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello hexo">
-<meta property="og:url" content="https://urnorchrislee.github.io/2015/12/15/hello-hexo/index.html">
+<meta property="og:title" content="delete关键字">
+<meta property="og:url" content="https://urnorchrislee.github.io/2016/03/29/delete/index.html">
 <meta property="og:site_name" content="西门少年">
-<meta property="og:description" content="Hello Hexo!">
-<meta property="og:image" content="http://olghiep7g.bkt.clouddn.com/FullSizeRender.jpg">
-<meta property="og:updated_time" content="2017-02-19T11:17:15.000Z">
+<meta property="og:description" content="delete关键字
+作用:
+
+删除对象中的属性
+删除没有使用var关键字声明的全局变量">
+<meta property="og:updated_time" content="2017-02-22T05:14:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello hexo">
-<meta name="twitter:description" content="Hello Hexo!">
-<meta name="twitter:image" content="http://olghiep7g.bkt.clouddn.com/FullSizeRender.jpg">
+<meta name="twitter:title" content="delete关键字">
+<meta name="twitter:description" content="delete关键字
+作用:
+
+删除对象中的属性
+删除没有使用var关键字声明的全局变量">
 
 
 
@@ -146,13 +156,13 @@
 
 
 
-  <link rel="canonical" href="https://urnorchrislee.github.io/2015/12/15/hello-hexo/"/>
+  <link rel="canonical" href="https://urnorchrislee.github.io/2016/03/29/delete/"/>
 
 
 
 
 
-  <title> hello hexo | 西门少年 </title>
+  <title> delete关键字 | 西门少年 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +289,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2015/12/15/hello-hexo/">
+  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/03/29/delete/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="西门少年">
@@ -303,7 +313,7 @@
             
             
               
-                hello hexo
+                delete关键字
               
             
           </h1>
@@ -318,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-15T22:12:58+08:00">
-                2015-12-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-29T10:16:16+08:00">
+                2016-03-29
               </time>
             
 
@@ -354,8 +364,25 @@
       
 
       
-        <h1 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo!"></a>Hello Hexo!</h1><hr>
-<p><img src="http://olghiep7g.bkt.clouddn.com/FullSizeRender.jpg" alt="chris"></p>
+        <h3 id="delete关键字"><a href="#delete关键字" class="headerlink" title="delete关键字"></a>delete关键字</h3><blockquote>
+<p>作用:</p>
+<ul>
+<li>删除对象中的属性</li>
+<li>删除没有使用var关键字声明的全局变量</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<hr>
+<blockquote>
+<p>注意:</p>
+<ul>
+<li>返回值 布尔类型的值(我们可以通过该值来判断是否删除成功)</li>
+<li>使用var关键字声明的变量无法被删除</li>
+<li>删除对象中不存在的属性没有任何变化,但是返回值为true</li>
+<li>不能删除window下面的全局变量(使用var声明),但是可以删除直接定义在window上面的属性</li>
+</ul>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> dog = &#123;</div><div class="line">        <span class="attr">name</span>:<span class="string">"阿黄"</span>,</div><div class="line">        <span class="attr">color</span>:<span class="string">"红色"</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">delete</span> dog.color); <span class="comment">//true</span></div><div class="line">    <span class="built_in">console</span>.log(dog.color);        <span class="comment">//undefined</span></div><div class="line"></div><div class="line">    <span class="keyword">var</span> a = <span class="number">10</span>;</div><div class="line">    b = <span class="number">20</span>;   <span class="comment">//没有使用var关键字声明的变量默认会成为全局变量,全局变量默认都会成为window的属性</span></div><div class="line">    <span class="built_in">console</span>.log(b); <span class="comment">//20</span></div><div class="line"></div><div class="line">    <span class="keyword">delete</span> b;</div><div class="line"><span class="comment">//    console.log(b);</span></div><div class="line">    <span class="built_in">console</span>.log(a); <span class="comment">//10</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">delete</span> a);   <span class="comment">//删除不成功  false</span></div><div class="line">    <span class="built_in">console</span>.log(a); <span class="comment">//10</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">delete</span> dog.age);   <span class="comment">//返回的是成功还是失败?  成功</span></div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">//window</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.a); <span class="comment">//10</span></div><div class="line">    <span class="keyword">delete</span> <span class="built_in">window</span>.a;</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.a); <span class="comment">//10</span></div><div class="line"></div><div class="line">    <span class="built_in">window</span>.demo = <span class="string">"demo"</span>;</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.demo); <span class="comment">//demo</span></div><div class="line">    <span class="keyword">delete</span> <span class="built_in">window</span>.demo;</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.demo); <span class="comment">//undefined</span></div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -379,9 +406,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-            <a href="/tags/html5/" rel="tag"># html5</a>
+            <a href="/tags/关键字/" rel="tag"># 关键字</a>
           
         </div>
       
@@ -394,14 +419,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/02/19/luoji/" rel="next" title="逻辑运算符">
+                <i class="fa fa-chevron-left"></i> 逻辑运算符
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/02/19/luoji/" rel="prev" title="逻辑运算符">
-                逻辑运算符 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/29/in/" rel="prev" title="in关键字">
+                in关键字 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -567,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hello Hexo!</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#delete关键字"><span class="nav-number">1.</span> <span class="nav-text">delete关键字</span></a></li></ol></div>
             
 
           </div>
