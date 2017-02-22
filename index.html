@@ -907,7 +907,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/10/01/shujuleixing/">
+  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/10/09/null/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="西门少年">
@@ -932,8 +932,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/10/01/shujuleixing/" itemprop="url">
-                  基本数据类型和复杂数据类型
+                <a class="post-title-link" href="/2016/10/09/null/" itemprop="url">
+                  null和undefined
                 </a>
               
             
@@ -949,8 +949,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-01T15:56:26+08:00">
-                2016-10-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-09T11:56:26+08:00">
+                2016-10-09
               </time>
             
 
@@ -1008,15 +1008,15 @@
 
       
         
-          <h3 id="基本数据类型-简单数据类型"><a href="#基本数据类型-简单数据类型" class="headerlink" title="基本数据类型(简单数据类型)"></a>基本数据类型(简单数据类型)</h3><ul>
-<li>string 字符串类型</li>
-<li>number 数值(小数和整数)</li>
-<li>null   空</li>
-<li>undefined 未定义</li>
-<li>boolean 布尔类型(true | false)
+          <h3 id="null和undefined到底有什么区别"><a href="#null和undefined到底有什么区别" class="headerlink" title="null和undefined到底有什么区别?"></a>null和undefined到底有什么区别?</h3><blockquote>
+<p>null        表示一个对象是“没有值”的值，也就是值为“空”；<br>   undefined   表示一个变量声明了没有初始化(赋值)；<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a);<span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
+<p>undefined不是一个有效的JSON，而null是；<br>undefined的类型(typeof)是undefined；<br>  null的类型(typeof)是object；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>); <span class="comment">//object</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">undefined</span>); <span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
+<p>Javascript将未赋值的变量默认值设为undefined；<br>  Javascript从来不会将变量设为null。它是用来让程序员表明某个用var声明的变量时没有值的。</p>
+</blockquote>
+<hr>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/10/01/shujuleixing/#more" rel="contents">
+            <a class="btn" href="/2016/10/09/null/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1099,7 +1099,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1117,7 +1117,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
