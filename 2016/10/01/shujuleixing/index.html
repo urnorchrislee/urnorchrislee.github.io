@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="touch,移动web," />
+  <meta name="keywords" content="数据类型," />
 
 
 
@@ -107,28 +107,31 @@
 
 
 
-<meta name="description" content="Touch 事件
-touchstart 当手指触碰屏幕的时候触发，不管当前有多少手指
-touchmove 当手指在屏幕中滑动时连续触发。移动端在用这个事件的时候通常会调用e.preventDefault()来阻止默认触发的页面滚动事件
-touchend 当手指离开屏幕的时候触发
-touchcancel 系统停止跟踪触摸时候会触发">
+<meta name="description" content="基本数据类型(简单数据类型)
+string 字符串类型
+number 数值(小数和整数)
+null   空
+undefined 未定义
+boolean 布尔类型(true | false)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移动web开发常用事件">
-<meta property="og:url" content="https://urnorchrislee.github.io/2016/11/09/mEvent/index.html">
+<meta property="og:title" content="基本数据类型和复杂数据类型">
+<meta property="og:url" content="https://urnorchrislee.github.io/2016/10/01/shujuleixing/index.html">
 <meta property="og:site_name" content="西门少年">
-<meta property="og:description" content="Touch 事件
-touchstart 当手指触碰屏幕的时候触发，不管当前有多少手指
-touchmove 当手指在屏幕中滑动时连续触发。移动端在用这个事件的时候通常会调用e.preventDefault()来阻止默认触发的页面滚动事件
-touchend 当手指离开屏幕的时候触发
-touchcancel 系统停止跟踪触摸时候会触发">
-<meta property="og:updated_time" content="2017-02-19T11:15:57.000Z">
+<meta property="og:description" content="基本数据类型(简单数据类型)
+string 字符串类型
+number 数值(小数和整数)
+null   空
+undefined 未定义
+boolean 布尔类型(true | false)">
+<meta property="og:updated_time" content="2017-02-22T03:55:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动web开发常用事件">
-<meta name="twitter:description" content="Touch 事件
-touchstart 当手指触碰屏幕的时候触发，不管当前有多少手指
-touchmove 当手指在屏幕中滑动时连续触发。移动端在用这个事件的时候通常会调用e.preventDefault()来阻止默认触发的页面滚动事件
-touchend 当手指离开屏幕的时候触发
-touchcancel 系统停止跟踪触摸时候会触发">
+<meta name="twitter:title" content="基本数据类型和复杂数据类型">
+<meta name="twitter:description" content="基本数据类型(简单数据类型)
+string 字符串类型
+number 数值(小数和整数)
+null   空
+undefined 未定义
+boolean 布尔类型(true | false)">
 
 
 
@@ -156,13 +159,13 @@ touchcancel 系统停止跟踪触摸时候会触发">
 
 
 
-  <link rel="canonical" href="https://urnorchrislee.github.io/2016/11/09/mEvent/"/>
+  <link rel="canonical" href="https://urnorchrislee.github.io/2016/10/01/shujuleixing/"/>
 
 
 
 
 
-  <title> 移动web开发常用事件 | 西门少年 </title>
+  <title> 基本数据类型和复杂数据类型 | 西门少年 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -289,7 +292,7 @@ touchcancel 系统停止跟踪触摸时候会触发">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/11/09/mEvent/">
+  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/10/01/shujuleixing/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="西门少年">
@@ -313,7 +316,7 @@ touchcancel 系统停止跟踪触摸时候会触发">
             
             
               
-                移动web开发常用事件
+                基本数据类型和复杂数据类型
               
             
           </h1>
@@ -328,8 +331,8 @@ touchcancel 系统停止跟踪触摸时候会触发">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-09T15:56:26+08:00">
-                2016-11-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-01T15:56:26+08:00">
+                2016-10-01
               </time>
             
 
@@ -351,8 +354,8 @@ touchcancel 系统停止跟踪触摸时候会触发">
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/移动web/" itemprop="url" rel="index">
-                    <span itemprop="name">移动web</span>
+                  <a href="/categories/数据类型/" itemprop="url" rel="index">
+                    <span itemprop="name">数据类型</span>
                   </a>
                 </span>
 
@@ -386,50 +389,36 @@ touchcancel 系统停止跟踪触摸时候会触发">
       
 
       
-        <ul>
-<li>Touch 事件<ul>
-<li>touchstart 当手指触碰屏幕的时候触发，不管当前有多少手指</li>
-<li>touchmove 当手指在屏幕中滑动时连续触发。移动端在用这个事件的时候通常会调用<br>e.preventDefault()来阻止默认触发的页面滚动事件</li>
-<li>touchend 当手指离开屏幕的时候触发</li>
-<li>touchcancel 系统停止跟踪触摸时候会触发</li>
-</ul>
+        <h3 id="基本数据类型-简单数据类型"><a href="#基本数据类型-简单数据类型" class="headerlink" title="基本数据类型(简单数据类型)"></a>基本数据类型(简单数据类型)</h3><ul>
+<li>string 字符串类型</li>
+<li>number 数值(小数和整数)</li>
+<li>null   空</li>
+<li>undefined 未定义</li>
+<li>boolean 布尔类型(true | false)<a id="more"></a>
 </li>
 </ul>
-<a id="more"></a>
-<ul>
-<li><p>触摸点：我们可以通过事件的event获取需要的相关触摸点信息</p>
-<ul>
-<li>targetTouches ⽬标元素的所有当前触摸点</li>
-<li>changedTouches ⻚⾯上最新更改的所有触摸点</li>
-<li>touches ⻚⾯上的所有触摸点 touches[0]</li>
+<h3 id="复杂数据类型-混合数据类型"><a href="#复杂数据类型-混合数据类型" class="headerlink" title="复杂数据类型(混合数据类型)"></a>复杂数据类型(混合数据类型)</h3><ul>
+<li>Object    对象类型</li>
+<li>Array     数组类型</li>
+<li>Date      日期类型</li>
+<li>Boolean   布尔类型</li>
+<li>String    字符串对象类型</li>
+<li>Function  函数</li>
+<li>RegExp    正则表达式</li>
+<li>Number</li>
+<li>Math</li>
 </ul>
-</li>
-<li><p>在每个触摸点中我们可以获取以下属性</p>
-<ul>
-<li>clientX:触摸⽬标在视⼝中的X坐标。</li>
-<li>clientY:触摸⽬标在视⼝中的Y坐标。</li>
-<li>pageX：触摸⽬标在⻚⾯中的x坐标。</li>
-<li>pageY：触摸⽬标在⻚⾯中的y坐标。</li>
-<li>screenX:触摸⽬标在屏幕中的x坐标。</li>
-<li>screenY:触摸⽬标在屏幕中的y坐标。</li>
-<li>target:触摸的DOM节点坐标。</li>
-</ul>
-</li>
-<li><p>Gesture 事件（不常⽤）</p>
-<ul>
-<li>gesturestart 当⼀个⼿指触摸屏幕之后，第⼆个⼿指再触摸屏幕时触发。</li>
-<li>gesturechange 当上⾯的事件触发后⽴即触发。</li>
-<li>gestureend 第⼆根⼿指离开屏幕时触发，之后将不会再次触发gesturechange。</li>
-<li>在event当中会返回另外两个参数： scale 根据两个⼿指的滑动距离计算的缩放⽐例 初<br>始1，rotation根据两个⼿指的滑动距离计算的旋转⻆度 初始 0。</li>
-</ul>
-</li>
-<li><p>过渡和动画结束事件</p>
-<ul>
-<li>transitionEnd 过渡结束后触发。</li>
-<li>animationEnd 动画结束后触发</li>
-</ul>
+<h3 id="如何判断数据的数据类型"><a href="#如何判断数据的数据类型" class="headerlink" title="如何判断数据的数据类型"></a>如何判断数据的数据类型</h3><ul>
+<li>关键字：typeof</li>
+<li>语法：typeof 变量</li>
+<li><p>结论:复杂数据在使用typeof操作的时候,打印出来的结果都是object ,除了函数</p>
+<pre><code>console.log(typeof function(){}); //function
+</code></pre></li>
+<li><p><strong>null注意点</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>); <span class="comment">//object</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//false</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="typeof的返回值是什么类型-—-string类型"><a href="#typeof的返回值是什么类型-—-string类型" class="headerlink" title="typeof的返回值是什么类型 — string类型"></a>typeof的返回值是什么类型 — string类型</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    <span class="keyword">var</span> a = <span class="string">'wyq'</span>;</div><div class="line">    <span class="keyword">var</span> b = <span class="number">10</span>;</div><div class="line">    <span class="keyword">var</span> c = <span class="literal">true</span>;</div><div class="line">    <span class="keyword">var</span> d = <span class="literal">undefined</span>;</div><div class="line">    <span class="keyword">var</span> e = <span class="literal">null</span>;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); <span class="comment">//string</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> b); <span class="comment">//number</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> c); <span class="comment">//boolean</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> d); <span class="comment">//undefined</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> e); <span class="comment">//object</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>); <span class="comment">//object</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="literal">null</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//false</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;); <span class="comment">//function</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">undefined</span>); <span class="comment">//undefined</span></div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -453,9 +442,7 @@ touchcancel 系统停止跟踪触摸时候会触发">
       
         <div class="post-tags">
           
-            <a href="/tags/touch/" rel="tag"># touch</a>
-          
-            <a href="/tags/移动web/" rel="tag"># 移动web</a>
+            <a href="/tags/数据类型/" rel="tag"># 数据类型</a>
           
         </div>
       
@@ -468,8 +455,8 @@ touchcancel 系统停止跟踪触摸时候会触发">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/01/shujuleixing/" rel="next" title="基本数据类型和复杂数据类型">
-                <i class="fa fa-chevron-left"></i> 基本数据类型和复杂数据类型
+              <a href="/2016/05/29/clickEvent/" rel="next" title="tap原理解析">
+                <i class="fa fa-chevron-left"></i> tap原理解析
               </a>
             
           </div>
@@ -478,8 +465,8 @@ touchcancel 系统停止跟踪触摸时候会触发">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/11/zepto/" rel="prev" title="Zepto">
-                Zepto <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/09/mEvent/" rel="prev" title="移动web开发常用事件">
+                移动web开发常用事件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -527,8 +514,17 @@ touchcancel 系统停止跟踪触摸时候会触发">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://olghiep7g.bkt.clouddn.com/FullSizeRender.jpg"
@@ -626,6 +622,22 @@ touchcancel 系统停止跟踪触摸时候会触发">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型-简单数据类型"><span class="nav-number">1.</span> <span class="nav-text">基本数据类型(简单数据类型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂数据类型-混合数据类型"><span class="nav-number">2.</span> <span class="nav-text">复杂数据类型(混合数据类型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何判断数据的数据类型"><span class="nav-number">3.</span> <span class="nav-text">如何判断数据的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#typeof的返回值是什么类型-—-string类型"><span class="nav-number">4.</span> <span class="nav-text">typeof的返回值是什么类型 — string类型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
