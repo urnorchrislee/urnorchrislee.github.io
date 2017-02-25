@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Zepto,框架," />
+  <meta name="keywords" content="面向对象," />
 
 
 
@@ -107,24 +107,21 @@
 
 
 
-<meta name="description" content="zepto官网
-英文版 http://zeptojs.com/
-中文版 http://www.bootcss.com/p/zeptojs/">
+<meta name="description" content="构造函数的原型对象
+01 什么是原型对象 在使用构造函数创建对象的时候，默认会生成一个与构造函数相关联的对象，这个对象就是原型对象。默认情况下，该对象是一个空的对象（{}）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Zepto">
-<meta property="og:url" content="https://urnorchrislee.github.io/2016/11/11/zepto/index.html">
+<meta property="og:title" content="面向对象(四)构造函数的原型对象">
+<meta property="og:url" content="https://urnorchrislee.github.io/2017/02/25/obj4/index.html">
 <meta property="og:site_name" content="西门少年">
-<meta property="og:description" content="zepto官网
-英文版 http://zeptojs.com/
-中文版 http://www.bootcss.com/p/zeptojs/">
-<meta property="og:image" content="http://olghiep7g.bkt.clouddn.com/logo.png">
-<meta property="og:updated_time" content="2017-02-22T03:26:10.000Z">
+<meta property="og:description" content="构造函数的原型对象
+01 什么是原型对象 在使用构造函数创建对象的时候，默认会生成一个与构造函数相关联的对象，这个对象就是原型对象。默认情况下，该对象是一个空的对象（{}）">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/790213-8506f13c4dbf8335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-02-25T01:39:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zepto">
-<meta name="twitter:description" content="zepto官网
-英文版 http://zeptojs.com/
-中文版 http://www.bootcss.com/p/zeptojs/">
-<meta name="twitter:image" content="http://olghiep7g.bkt.clouddn.com/logo.png">
+<meta name="twitter:title" content="面向对象(四)构造函数的原型对象">
+<meta name="twitter:description" content="构造函数的原型对象
+01 什么是原型对象 在使用构造函数创建对象的时候，默认会生成一个与构造函数相关联的对象，这个对象就是原型对象。默认情况下，该对象是一个空的对象（{}）">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/790213-8506f13c4dbf8335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -152,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="https://urnorchrislee.github.io/2016/11/11/zepto/"/>
+  <link rel="canonical" href="https://urnorchrislee.github.io/2017/02/25/obj4/"/>
 
 
 
 
 
-  <title> Zepto | 西门少年 </title>
+  <title> 面向对象(四)构造函数的原型对象 | 西门少年 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -285,7 +282,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/11/11/zepto/">
+  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2017/02/25/obj4/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="西门少年">
@@ -309,7 +306,7 @@
             
             
               
-                Zepto
+                面向对象(四)构造函数的原型对象
               
             
           </h1>
@@ -324,8 +321,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-11T00:00:00+08:00">
-                2016-11-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-25T09:39:49+08:00">
+                2017-02-25
               </time>
             
 
@@ -347,19 +344,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/框架/" itemprop="url" rel="index">
-                    <span itemprop="name">框架</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/框架/Zepto/" itemprop="url" rel="index">
-                    <span itemprop="name">Zepto</span>
+                  <a href="/categories/面向对象/" itemprop="url" rel="index">
+                    <span itemprop="name">面向对象</span>
                   </a>
                 </span>
 
@@ -393,48 +379,37 @@
       
 
       
-        <p><img src="http://olghiep7g.bkt.clouddn.com/logo.png" alt="zepto"></p>
-<ul>
-<li>zepto官网<ul>
-<li>英文版 <a href="http://zeptojs.com/" target="_blank" rel="external">http://zeptojs.com/</a></li>
-<li>中文版 <a href="http://www.bootcss.com/p/zeptojs/" target="_blank" rel="external">http://www.bootcss.com/p/zeptojs/</a> </li>
-</ul>
+        <blockquote>
+<h1 id="构造函数的原型对象"><a href="#构造函数的原型对象" class="headerlink" title="构造函数的原型对象"></a>构造函数的原型对象</h1><ul>
+<li>01 什么是原型对象<br> 在使用构造函数创建对象的时候，默认会生成一个与构造函数相关联的对象，这个对象就是原型对象。默认情况下，该对象是一个空的对象（{}）<a id="more"></a>
 </li>
 </ul>
-<a id="more"></a>
+<hr>
 <ul>
-<li>Zepto 是⼀个轻量级的针对现代⾼级浏览器的 JavaScript 库， 它与jquery 有着类似的api。<br>如果你会⽤ jquery，那么你也会⽤ zepto。</li>
-<li>Zepto的设计⽬的是提供 jQuery 的类似的API，但并不是100%覆盖 jQuery 。Zepto设计的<br>⽬的是有⼀个5-10k的通⽤库、下载并快速执⾏、有⼀个熟悉通⽤的API，所以你能把你主<br>要的精⼒放到应⽤开发上。</li>
-<li><p>思考：jQuery和Zepto.js的区别在哪⾥？</p>
+<li>02 原型对象的作用<br>   使用构造函数创建的对象，能够自动拥有（可以使用）原型对象中所有的属性和方法。</li>
+</ul>
+<hr>
 <ul>
-<li>jQuery更多是在<strong>PC端</strong>被应⽤，因此，考虑了很多低级浏览器的的兼容性问题；<br>⽽Zepto.js则是直接抛弃了低级浏览器的适配问题，显得很轻盈；</li>
-<li>Zepto.js在<strong>移动端</strong>被运⽤的更加⼴泛；</li>
-<li>jQuery的底层是通过<strong>DOM</strong>来实现效果的， zepto.js 是⽤<strong>css3</strong> 来实现的</li>
-<li>Zepto.js可以说是阉割版本的jQuery。</li>
+<li>03 如何访问原型对象<br>① 构造函数.prototype<br>② 对象.<strong>proto</strong></li>
 </ul>
-</li>
-<li><p>Zepto设计模块</p>
+<hr>
 <ul>
-<li>zepto 为了保持⾜够的轻量和效率，只保留了默认的最基本的功能，其他的功能，如果<br>有需要，只要再次引⼊就可以了；</li>
+<li>4 如何设置原型对象<br>① 可以像设置普通对象一样来利用对象的动态特性设置属性和方法<br>② 使用字面量的方法来设置原型对象（直接替换）</li>
 </ul>
-</li>
-<li><p>tap和click的区别</p>
+<hr>
 <ul>
-<li>tap 只作⽤在移动端，PC端是⽆效的</li>
-<li>click 在pc端和移动端都是ok的</li>
-<li>但是我们在移动端要⽤tap，因为 tap ⽐ click 快200-300ms</li>
+<li>05 约定<br>正确的说法：该对象的构造函数的原型对象<br>构造函数的原型<br>构造函数的原型对象<br>对象的原型对象<br>对象的原型<br>以上四种说法，她们的意思是一样的，都是该对象的构造函数的原型对象</li>
 </ul>
-</li>
-<li><p>zepto 和 jQuery</p>
-<ul>
-<li>⾸先，zepto默认只具有基本的模块，其他功能模块需要单独引⽤，引⽤的模块，必须<br>放在zepto的后⾯，fx.js 和fxmethods.js 他们之间必须是fxmethods.js在fx.js的后⾯；<br>其他的包之间顺序⽆所谓；</li>
-<li>jQuery默认是⼀个⽂件中，包含所有的功模块；</li>
-<li>zepto的底层是通过css3 实现的，jQuery是操作的DOM,所以有些css3的效果，是<br>jquery做不到的；</li>
-<li>zepto⽐jQuery多了更多的移动端的 事件的⽀持，⽐如说tap， swipe……</li>
-<li>zepto的兼容性⽐jQuery差，因为zepto更多的是注重移动端和效率，jQuery注重的是<br>兼容性；</li>
+</blockquote>
+<hr>
+<h1 id="原型对象"><a href="#原型对象" class="headerlink" title="原型对象"></a>原型对象</h1><ul>
+<li>01提供一个构造函数</li>
+<li>02设置属性和方法</li>
+<li>03设置原型对象</li>
+<li>04创建对象</li>
 </ul>
-</li>
-</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">        <span class="keyword">this</span>.color = <span class="string">'绿色'</span>;</div><div class="line">    &#125;</div><div class="line">    Dog.prototype.sayWang = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Wang Wang Wang"</span>);</div><div class="line">    &#125;;</div><div class="line">    <span class="keyword">var</span> dog1 = <span class="keyword">new</span> Dog(<span class="string">"阿黄"</span>);</div><div class="line">    <span class="keyword">var</span> dog2 = <span class="keyword">new</span> Dog(<span class="string">"拉拉"</span>);</div><div class="line">    </div><div class="line">    dog1.sayWang();</div><div class="line">    dog2.sayWang();</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="内存结构图"><a href="#内存结构图" class="headerlink" title="内存结构图"></a>内存结构图</h3><p><img src="http://upload-images.jianshu.io/upload_images/790213-8506f13c4dbf8335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sayWang"></p>
 
       
     </div>
@@ -458,9 +433,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Zepto/" rel="tag"># Zepto</a>
-          
-            <a href="/tags/框架/" rel="tag"># 框架</a>
+            <a href="/tags/面向对象/" rel="tag"># 面向对象</a>
           
         </div>
       
@@ -473,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/09/mEvent/" rel="next" title="移动web开发常用事件">
-                <i class="fa fa-chevron-left"></i> 移动web开发常用事件
+              <a href="/2017/02/25/obj3/" rel="next" title="面向对象(三)构造函数注意事项">
+                <i class="fa fa-chevron-left"></i> 面向对象(三)构造函数注意事项
               </a>
             
           </div>
@@ -482,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/23/equel/" rel="prev" title="JavaScript数据操作之等于和全等符号的说明">
-                JavaScript数据操作之等于和全等符号的说明 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -532,8 +501,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://olghiep7g.bkt.clouddn.com/FullSizeRender.jpg"
@@ -631,6 +609,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#构造函数的原型对象"><span class="nav-number">1.</span> <span class="nav-text">构造函数的原型对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原型对象"><span class="nav-number">2.</span> <span class="nav-text">原型对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内存结构图"><span class="nav-number">2.0.1.</span> <span class="nav-text">内存结构图</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
