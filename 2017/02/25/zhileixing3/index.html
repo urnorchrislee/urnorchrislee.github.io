@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="数据类型,undefined," />
+  <meta name="keywords" content="数据类型," />
 
 
 
@@ -107,22 +107,19 @@
 
 
 
-<meta name="description" content="null和undefined到底有什么区别?
-null        表示一个对象是“没有值”的值，也就是值为“空”；   undefined   表示一个变量声明了没有初始化(赋值)；  12var a;console.log(typeof a);//undefined
-undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是undefined；  nu">
+<meta name="description" content="值类型和引用类型在函数中的使用
+函数的参数:形参(形式参数):该变量是用来占位的，在调用之前是没有值的，在函数内部表现为一个局部变量(param)实参(实际参数):函数调用的时候传入的参数，这个参数是有值得(a)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="null和undefined">
-<meta property="og:url" content="https://urnorchrislee.github.io/2016/10/09/null/index.html">
+<meta property="og:title" content="值类型和引用类型（三）在函数中的使用">
+<meta property="og:url" content="https://urnorchrislee.github.io/2017/02/25/zhileixing3/index.html">
 <meta property="og:site_name" content="西门少年">
-<meta property="og:description" content="null和undefined到底有什么区别?
-null        表示一个对象是“没有值”的值，也就是值为“空”；   undefined   表示一个变量声明了没有初始化(赋值)；  12var a;console.log(typeof a);//undefined
-undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是undefined；  nu">
-<meta property="og:updated_time" content="2017-02-22T04:58:46.000Z">
+<meta property="og:description" content="值类型和引用类型在函数中的使用
+函数的参数:形参(形式参数):该变量是用来占位的，在调用之前是没有值的，在函数内部表现为一个局部变量(param)实参(实际参数):函数调用的时候传入的参数，这个参数是有值得(a)">
+<meta property="og:updated_time" content="2017-02-25T01:21:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="null和undefined">
-<meta name="twitter:description" content="null和undefined到底有什么区别?
-null        表示一个对象是“没有值”的值，也就是值为“空”；   undefined   表示一个变量声明了没有初始化(赋值)；  12var a;console.log(typeof a);//undefined
-undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是undefined；  nu">
+<meta name="twitter:title" content="值类型和引用类型（三）在函数中的使用">
+<meta name="twitter:description" content="值类型和引用类型在函数中的使用
+函数的参数:形参(形式参数):该变量是用来占位的，在调用之前是没有值的，在函数内部表现为一个局部变量(param)实参(实际参数):函数调用的时候传入的参数，这个参数是有值得(a)">
 
 
 
@@ -150,13 +147,13 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
 
 
 
-  <link rel="canonical" href="https://urnorchrislee.github.io/2016/10/09/null/"/>
+  <link rel="canonical" href="https://urnorchrislee.github.io/2017/02/25/zhileixing3/"/>
 
 
 
 
 
-  <title> null和undefined | 西门少年 </title>
+  <title> 值类型和引用类型（三）在函数中的使用 | 西门少年 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +280,7 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2016/10/09/null/">
+  <link itemprop="mainEntityOfPage" href="https://urnorchrislee.github.io/2017/02/25/zhileixing3/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="西门少年">
@@ -307,7 +304,7 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
             
             
               
-                null和undefined
+                值类型和引用类型（三）在函数中的使用
               
             
           </h1>
@@ -322,8 +319,8 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-09T11:56:26+08:00">
-                2016-10-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-25T09:21:52+08:00">
+                2017-02-25
               </time>
             
 
@@ -380,20 +377,14 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
       
 
       
-        <h3 id="null和undefined到底有什么区别"><a href="#null和undefined到底有什么区别" class="headerlink" title="null和undefined到底有什么区别?"></a>null和undefined到底有什么区别?</h3><blockquote>
-<p>null        表示一个对象是“没有值”的值，也就是值为“空”；<br>   undefined   表示一个变量声明了没有初始化(赋值)；<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a);<span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
-<p>undefined不是一个有效的JSON，而null是；<br>undefined的类型(typeof)是undefined；<br>  null的类型(typeof)是object；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>); <span class="comment">//object</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">undefined</span>); <span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
-<p>Javascript将未赋值的变量默认值设为undefined；<br>  Javascript从来不会将变量设为null。它是用来让程序员表明某个用var声明的变量时没有值的。</p>
+        <h3 id="值类型和引用类型在函数中的使用"><a href="#值类型和引用类型在函数中的使用" class="headerlink" title="值类型和引用类型在函数中的使用"></a>值类型和引用类型在函数中的使用</h3><blockquote>
+<p>函数的参数:<br>形参(形式参数):该变量是用来占位的，在调用之前是没有值的，在函数内部表现为一个局部变量(param)<br>实参(实际参数):函数调用的时候传入的参数，这个参数是有值得(a)</p>
 </blockquote>
-<hr>
-<a id="more"></a>
-<h3 id="typeof-undefined-和-typeof-null"><a href="#typeof-undefined-和-typeof-null" class="headerlink" title="typeof undefined 和 typeof null"></a>typeof undefined 和 typeof null</h3><blockquote>
-<p>typeof undefined<br>    //“undefined”<br>    undefined :是一个表示”无”的原始值或者说表示”缺少值”，就是此处应该有一个值，但是还没有定义。当尝试读取时会返回 undefined；<br>    例如变量被声明了，但没有赋值时，就等于undefined</p>
-<p>typeof null<br>    //“object”<br>    null : 是一个对象(空对象, 没有任何属性和方法)；<br>    例如作为函数的参数，表示该函数的参数不是对象；</p>
-<p>注意：<br>    在验证null时，一定要使用　=== ，因为 == 无法分别 null 和　undefined<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> == <span class="literal">undefined</span>);   <span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span> === <span class="literal">undefined</span>);  <span class="comment">//false</span></div></pre></td></tr></table></figure></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><blockquote>
+<p>函数的调用:把实参的值赋值给形参<br>值类型的数据作为函数的参数：那么内部修改了形参的值，对外部的实参没有影响的<br>引用类型的数据作为函数的参数：那么内部修改了形参的值，对外部的实参有影响，他们指向的是同一块数据</p>
 </blockquote>
-<h4 id="什么时候我们的变量值为null什么时候为undefined"><a href="#什么时候我们的变量值为null什么时候为undefined" class="headerlink" title="什么时候我们的变量值为null什么时候为undefined?"></a>什么时候我们的变量值为null什么时候为undefined?</h4><h4 id="答案-变量的值永远都不可能为null-除非我们手动的赋值为null"><a href="#答案-变量的值永远都不可能为null-除非我们手动的赋值为null" class="headerlink" title="答案:变量的值永远都不可能为null,除非我们手动的赋值为null"></a>答案:变量的值永远都不可能为null,除非我们手动的赋值为null</h4><h4 id="为什么需要设置为null"><a href="#为什么需要设置为null" class="headerlink" title="为什么需要设置为null?"></a>为什么需要设置为null?</h4><h4 id="告诉系统这个变量不再使用-可以把占用的空间回收了"><a href="#告诉系统这个变量不再使用-可以把占用的空间回收了" class="headerlink" title="告诉系统这个变量不再使用,可以把占用的空间回收了"></a>告诉系统这个变量不再使用,可以把占用的空间回收了</h4><hr>
-<p>参考阅读<br><a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">undefined与null的区别</a><br><a href="https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions" target="_blank" rel="external">前端开发面试题</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">param</span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(param);</div><div class="line">        param = <span class="string">'我不是一个字符串啊'</span>;</div><div class="line">        <span class="built_in">console</span>.log(param);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> a = <span class="string">'我是字符串'</span>;</div><div class="line">    foo(a);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(obj);</div><div class="line">        <span class="comment">//尝试修改变量的值</span></div><div class="line">        obj.name = <span class="string">'小白'</span>;</div><div class="line">        obj.age = <span class="string">'22'</span>;</div><div class="line">        obj = &#123;</div><div class="line">            <span class="string">'color'</span> : <span class="string">'red'</span></div><div class="line">        &#125;;</div><div class="line">        <span class="built_in">console</span>.log(obj);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> o = &#123;<span class="string">'name'</span> : <span class="string">'hello'</span>&#125;;</div><div class="line">    foo(o);</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(o.name + <span class="string">'___'</span>); <span class="comment">//小白___</span></div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -419,8 +410,6 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
           
             <a href="/tags/数据类型/" rel="tag"># 数据类型</a>
           
-            <a href="/tags/undefined/" rel="tag"># undefined</a>
-          
         </div>
       
 
@@ -432,8 +421,8 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/01/shujuleixing/" rel="next" title="基本数据类型和复杂数据类型">
-                <i class="fa fa-chevron-left"></i> 基本数据类型和复杂数据类型
+              <a href="/2017/02/25/zhileixing2/" rel="next" title="值类型和引用类型（二）赋值操作">
+                <i class="fa fa-chevron-left"></i> 值类型和引用类型（二）赋值操作
               </a>
             
           </div>
@@ -441,10 +430,6 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/09/mEvent/" rel="prev" title="移动web开发常用事件">
-                移动web开发常用事件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -609,7 +594,7 @@ undefined不是一个有效的JSON，而null是；undefined的类型(typeof)是u
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#null和undefined到底有什么区别"><span class="nav-number">1.</span> <span class="nav-text">null和undefined到底有什么区别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#typeof-undefined-和-typeof-null"><span class="nav-number">2.</span> <span class="nav-text">typeof undefined 和 typeof null</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么时候我们的变量值为null什么时候为undefined"><span class="nav-number">2.1.</span> <span class="nav-text">什么时候我们的变量值为null什么时候为undefined?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#答案-变量的值永远都不可能为null-除非我们手动的赋值为null"><span class="nav-number">2.2.</span> <span class="nav-text">答案:变量的值永远都不可能为null,除非我们手动的赋值为null</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么需要设置为null"><span class="nav-number">2.3.</span> <span class="nav-text">为什么需要设置为null?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#告诉系统这个变量不再使用-可以把占用的空间回收了"><span class="nav-number">2.4.</span> <span class="nav-text">告诉系统这个变量不再使用,可以把占用的空间回收了</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值类型和引用类型在函数中的使用"><span class="nav-number">1.</span> <span class="nav-text">值类型和引用类型在函数中的使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text"></span></a></div>
             
 
           </div>
